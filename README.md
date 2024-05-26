@@ -18,17 +18,39 @@ Greta is targeted to help penetration testers evaluate a customer's defenses' ab
 
 ## Requirements
   - A Linux O/S capable of running Greta
+  - python3 ( Tested on python 3.9.2)
   - root permissions (required for UDP traffic)
   - ssl certificate and key
   - A directory called "logs" in the same directory as greta is running out of
 
 ## Installation
 
-1. Clone the repository (private repository, so manually download for now)
+Note: Use sudo where necessary
+
+1. Clone the repository (private repository, so manually download or copy paste for now)
 
    git clone https://github.com/ac0mm/greta.git
 
 2. Change into the greta directory
+
+3. Make a logs directory
+
+     mkdir logs
+
+4. Generate Certificates
+
+    Example Command:
+       openssl req -newkey rsa:4096 -x509 -sha256 -days 3650 -nodes -out example.crt -keyout example.key
+          
+5. Installed!
+
+## Use
+
+  python3 greta_server.py -c example.crt -k example.key
+
+  - Listeners will start up on 50000 (TCP), 50001 (TLS), 50003 (UDP)
+  - You won't have any sessions to interact with until you have a shell callback
+  - 
 
 ## Three Main Points
   - Provide a one-stop framework for catching generic open-source shells
