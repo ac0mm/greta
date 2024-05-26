@@ -66,6 +66,8 @@ There has been a shift in threat actors to "live off the land" more, increasing 
 
 ## Areas of Improvement
 
+- Error handling
+
 - C2 Communications Methods
   - DNS
   - ICMP
