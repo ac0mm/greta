@@ -75,7 +75,7 @@ There has been a shift in threat actors to "live off the land" more, increasing 
   - SSH
   - HTTP
   - HTTPS
-  - 
+   
 - C2 Communications Mode
   - Consistent
   - Random re-sync
