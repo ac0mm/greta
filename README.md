@@ -50,6 +50,7 @@ Note: Use sudo where necessary
 
   - Listeners will start up on 50000 (TCP), 50001 (TLS), 50003 (UDP)
   - You won't have any sessions to interact with until you have a shell callback
+  - The session token being looked for is the IP address and port ( 192.168.1.3:59821 )
   - 
 
 ## Three Main Points
