@@ -6,6 +6,8 @@ Greta is a C2 framework written in Python for interacting with remote targets us
 
 Greta is targeted to help penetration testers evaluate a customer's defenses' ability to detect or respond to various forms of command and control traffic. It additionally logs all commands and target responses per target.
 
+Demo: https://www.youtube.com/watch?v=wMej7KdCXuk
+
 ## Table of Contents
 
   - Requirements
