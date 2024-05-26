@@ -8,7 +8,6 @@ Greta is targeted to help penetration testers evaluate a customer's defenses' ab
 
 ## Table of Contents
 
-  - Demo
   - Requirements
   - Installation
   - Use
@@ -27,7 +26,7 @@ Greta is targeted to help penetration testers evaluate a customer's defenses' ab
 
 Note: Use sudo where necessary
 
-1. Clone the repository (private repository, so manually download or copy paste for now)
+1. Clone the repository
 
    git clone https://github.com/ac0mm/greta.git
 
@@ -51,7 +50,8 @@ Note: Use sudo where necessary
   - Listeners will start up on 50000 (TCP), 50001 (TLS), 50003 (UDP)
   - You won't have any sessions to interact with until you have a shell callback
   - The session token being looked for is the IP address and port ( 192.168.1.3:59821 )
-  - 
+  - Interactive session is just a continuous loop
+  - Logs are done by server and by target ( IP:port.log)
 
 ## Three Main Points
   - Provide a one-stop framework for catching generic open-source shells
