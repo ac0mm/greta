@@ -126,7 +126,7 @@ class TCPServer:
 
         try:
             while True:
-                data, addr = server_socket.recvfrom(2048)
+                data, addr = server_socket.recvfrom(1024)
                 client_id = (f"{addr[0]}:{addr[1]}", protocol)
                 if client_id not in self.client_sessions:
                     self.client_sessions[client_id] = client_id
@@ -160,7 +160,7 @@ class TCPServer:
     def handle_client(self,client_socket, client_id):
         try:
             while True:
-                data = client_socket.recv(2048)
+                data = client_socket.recv(1024)
                 if not data:
                     break
                 print(f"Revieved from {client_id[0]}: {data.decode()}")
